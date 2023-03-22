@@ -4,6 +4,16 @@
   list-style: none;
 }
 
+h1 {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+p, h2 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
 body {
   background-attachment: fixed;
   background-image: url(img/background.jpg);
@@ -28,17 +38,17 @@ header {
   width: 100%;
   height: 50px;
   background-color: #fff;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
 #container-cards {
   position: absolute;
   left: 10%;
-  top: 5%;
+  top: 8%;
   width: 80%;
-  height: 100%;
-  background-color: red;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -48,6 +58,13 @@ header {
 
 .squirtle{
   background-image: url(img/water-bg.jpg);
+}
+.charmander{
+  background: rgb(154,93,0);
+  background: radial-gradient(circle, rgba(154,93,0,1) 0%, rgba(205,61,0,1) 53%, rgba(255,94,0,1) 100%);
+}
+.bulbasaur{
+  background-image: url(img/grass-bg.jpg);
 }
 
 .card {
@@ -64,7 +81,6 @@ header {
 .name {
   text-align: center;
   font-size: 20px;
-  display: flex;
 }
 
 .pictures-container {
