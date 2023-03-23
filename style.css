@@ -58,13 +58,17 @@ header {
 
 .squirtle{
   background-image: url(img/water-bg.jpg);
+  
+  animation: cardPlacementStartSquirtle 0.5s linear;
 }
 .charmander{
   background: rgb(154,93,0);
   background: radial-gradient(circle, rgba(154,93,0,1) 0%, rgba(205,61,0,1) 53%, rgba(255,94,0,1) 100%);
+  animation: cardPlacementStartCharmander 0.5s linear;
 }
 .bulbasaur{
   background-image: url(img/grass-bg.jpg);
+  animation: cardPlacementStartbulbasaur 0.5s linear;
 }
 
 .card {
@@ -76,11 +80,28 @@ header {
   background-color: #fff;
   border: 5px solid goldenrod;
   border-radius: 5px;
-  
 }
-.name {
-  text-align: center;
+
+
+
+
+.header-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 900;
   font-size: 20px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto ;
+}
+
+.pokemon-too-large-name {
+  font-size: 18px;
+}
+
+.pokemon-element-pv-container {
+  display: flex;
 }
 
 .pictures-container {
@@ -98,6 +119,10 @@ header {
 .icon-element {
   width: 25px;
   margin: 0 10px;
+}
+
+.icon-header {
+  margin: 0;
 }
 
 .container-attacks {
@@ -149,4 +174,43 @@ header {
 
 .weaknesses{
   min-width: 50%;
+}
+
+@keyframes cardPlacementStartSquirtle {
+  0% {
+    position: absolute;
+    left: 19%;
+    top: 50%;
+  }
+ 100% {
+    position: absolute;
+    left: 19%;
+    top: 0%;
+  }
+}
+
+@keyframes cardPlacementStartbulbasaur {
+  0% {
+    position: absolute;
+    left: 19%;
+    top: 50%;
+  }
+  100% {
+    position: absolute;
+    left: 19%;
+    top: 700%;
+  }
+}
+
+@keyframes cardPlacementStartCharmander {
+  0% {
+    position: absolute;
+    left: 19%;
+    top: 50%;
+  }
+  100% {
+    position: absolute;
+    left: 19%;
+    top: 380%;
+  }
 }
