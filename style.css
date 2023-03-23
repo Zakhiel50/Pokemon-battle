@@ -75,7 +75,7 @@ header {
   min-width: 200px;
   min-height: 350px;
   max-width: 200px;
-  max-height: 350px;
+
   margin: 10px;
   background-color: #fff;
   border: 5px solid goldenrod;
@@ -213,4 +213,56 @@ header {
     left: 19%;
     top: 380%;
   }
+}
+
+.cardNone {
+  display: none;
+}
+
+.section-bot {
+  width: 100%;
+  height: 50%;
+  background-color: #000;
+}
+
+.section-player {
+
+  margin-left: auto;
+  margin-right: auto;
+  height: 50%;
+}
+
+.deck-player {
+
+  width: 100%;
+  top: -100px;
+  background-color: lightgreen;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.reserve {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.first {
+  z-index: 1;
+}
+
+.pokemon-first {
+  margin-left: auto;
+  margin-right: auto ;
+}
+
+.section-bot {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-bot-hidden {
+  display: none;
+  
 }
