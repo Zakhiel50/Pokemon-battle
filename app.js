@@ -8,7 +8,9 @@ container.appendChild(sectionPlayer)
 sectionPlayer.classList = "section-player"
 
 
-
+const botBulbasaur = bulbasaur.cloneNode("ul")
+const botCharmander = charmander.cloneNode("ul")
+const botSquirtle = squirtle.cloneNode("ul")
 
 
 
@@ -42,4 +44,13 @@ let test = bulbasaur.cloneNode(true)
 
     const sectionBot = document.querySelector(".section-bot")
     sectionBot.classList.remove("section-bot-hidden")
+
+    
+    sectionBot.appendChild(botSquirtle)
+    
+    // const reserveBot = document.createElement("div")
+    // reserveBot.classList.add("reserve-bot")
+    // sectionBot.appendChild(reserveBot)
+    // reserveBot.appendChild(botCharmander)
+    // reserveBot.appendChild(botSquirtle)
 })
